@@ -8,9 +8,16 @@
       <v-text-field class="search-box" solo></v-text-field>
       <v-btn class="search-button">Buscar</v-btn>
     </v-layout>
-    <v-layout class="news-container">
-
-    </v-layout>
+    <v-container class="news-container">
+      <v-layout column class="card">
+        <div class="card-title">Crenças das mães em relação à vacina</div>
+        <div class="card-content">O objetivo deste trabalho foi identificar a importância das variáveis 
+          do Modelo de Crenças em Saúde no Comportamento das mães que iniciam 
+          a vacinação básica dos filhos. Segundo este Modelo, para uma pessoa 
+          adotar um determinado...
+        </div>
+      </v-layout>
+    </v-container>
   </v-layout>
 </template>
 
@@ -33,7 +40,7 @@ export default {
     font-family: 'Oldenburg', cursive;
     color: #f3f3f3;
     font-size: 24px;
-    margin-top: 25px;
+    margin: 25px 0 20px 0;
   }
   .search-box {
     width: 350px;
@@ -51,5 +58,27 @@ export default {
   }
   .news-container {
     background-color: #e5e5e5;
+    max-width: 80%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .card {
+    background-color: #f3f3f3;
+    padding: 25px;
+    max-width: 450px;
+    border-radius: 5px;
+    border: solid #9e9e9e 1px;
+    box-shadow: none;
+  }
+  .card-title {
+    color: #252525;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-content {
+    color: #7a7a7a;
+    text-align: justify;
   }
 </style>
