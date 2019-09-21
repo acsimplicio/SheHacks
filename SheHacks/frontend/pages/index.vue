@@ -16,6 +16,16 @@
           a vacinação básica dos filhos. Segundo este Modelo, para uma pessoa 
           adotar um determinado...
         </div>
+        <div class="card-reference-info">
+          Fonte: Revista Brasileira de Enfermagem 
+        </div>
+        <div class="card-reference-info">
+          Autor: Silvia Lúcia Ferreira
+        </div>
+        <div>
+          <img src="../static/facebook-icon.png" height="20px" width="20px" style="margin-top:10px; margin-right:5px"/>
+          <img src="../static/whatsapp-icon.png" height="20px" width="20px"/>
+        </div>
       </v-layout>
     </v-container>
   </v-layout>
@@ -43,7 +53,7 @@ export default {
     margin: 25px 0 20px 0;
   }
   .search-box {
-    width: 350px;
+    max-width: 350px;
     max-height: 30px;
     margin: 0;
     border-radius: 0;
@@ -61,7 +71,7 @@ export default {
     max-width: 80%;
     margin-top:20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
   }
   .card {
     background-color: #f3f3f3;
@@ -80,5 +90,8 @@ export default {
   .card-content {
     color: #7a7a7a;
     text-align: justify;
+  }
+  .card-reference-info {
+    margin-top: 5px;
   }
 </style>
